@@ -7,6 +7,7 @@ Projet réalisé dans le cadre du module **Outils collaboratifs avec Git / GitHu
 
 - **Ajouter une tâche** : on saisit un titre, la saisie vide est refusée.
 - **Afficher les tâches** : toutes les tâches avec leur numéro, avec un message si la liste est vide.
+- **Rechercher une tâche** : on saisit un mot-clé, le programme affiche les tâches dont le titre le contient.
 - **Quitter** : ferme le programme (une option invalide affiche un message d'erreur).
 
 ## Étapes réalisées
@@ -14,7 +15,8 @@ Projet réalisé dans le cadre du module **Outils collaboratifs avec Git / GitHu
 1. Création du fichier `main.py` avec le menu, l'ajout et l'affichage des tâches.
 2. Test du programme avec le bouton **Run Python File** de VS Code.
 3. Initialisation du dépôt Git local et premiers commits.
-4. Publication du projet sur GitHub.
+4. Publication du projet sur GitHub (premier push).
+5. Ajout de la fonctionnalité de recherche dans `main.py` puis mise à jour du README et second push.
 
 ## Comment exécuter le programme
 
