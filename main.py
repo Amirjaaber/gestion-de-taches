@@ -1,50 +1,41 @@
-# Projet : Application de gestion des taches
-# Module : Outils collaboratifs avec Git / GitHub
-
-# Liste qui contient les taches (chaque tache est un titre)
 taches = []
 
 
 def ajouter_tache(titre):
-    """Ajoute une tache a la liste."""
     taches.append(titre)
-    print("Tâche ajoutée avec succès.")
-
+    print("Tache ajoutee avec succes")
 
 def rechercher_taches(mot_cle):
-    """Affiche les taches dont le titre contient le mot-clé."""
-    print("--- Résultats de la recherche ---")
+    print("--- Resultats de la recherche")
     trouve = False
     for i in range(len(taches)):
         if mot_cle.lower() in taches[i].lower():
             print(str(i + 1) + " - " + taches[i])
             trouve = True
     if trouve == False:
-        print("Aucune tâche ne contient ce mot.")
+        print("Aucune tache ne contient ce mot.")
 
 
 def afficher_taches():
-    """Affiche toutes les taches avec leur numero."""
     if len(taches) == 0:
-        print("Aucune tâche pour le moment.")
+        print("Aucune tache pour le moment.")
     else:
-        print("--- Liste des tâches ---")
+        print("Liste des tâches")
         for i in range(len(taches)):
             print(str(i + 1) + " - " + taches[i])
 
 
-# Programme principal
 while True:
     print()
-    print("=== GESTION DES TACHES ===")
-    print("1. Ajouter une tâche")
-    print("2. Afficher les tâches")
-    print("3. Rechercher une tâche")
-    print("0. Quitter")
+    print("GESTION DES TACHES")
+    print("1 ajouter une tache")
+    print("2 afficher les tâches")
+    print("3 rechercher une tâche")
+    print("0 quitter")
     choix = input("Votre choix : ")
 
     if choix == "1":
-        titre = input("Titre de la tâche : ")
+        titre = input("Titre de la tache : ")
         if titre == "":
             print("Erreur : le titre ne peut pas être vide.")
         else:
@@ -52,10 +43,10 @@ while True:
     elif choix == "2":
         afficher_taches()
     elif choix == "3":
-        mot = input("Mot-clé à rechercher : ")
+        mot = input("Mot cle a rechercher : ")
         rechercher_taches(mot)
     elif choix == "0":
-        print("Au revoir !")
+        print("Au revoir")
         break
     else:
-        print("Option invalide, veuillez réessayer.")
+        print("Option invalide, veuillez resessayer.")
